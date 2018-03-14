@@ -44,3 +44,4 @@ Java 序列化使用一个称为 serialVersionUID 的特性来帮助处理一个
 
 作为一条经验规则，无论任何时候添加或删除一个类特征（即属性或其他任何实例级状态变量），都需要更改它的 serialVersionUID。在连接的另一端获得一个 java.io.InvalidClassException，比由不兼容的类更改导致应用程序错误要好。
 
+ref:[What is a serialVersionUID and why should I use it?](https://stackoverflow.com/questions/285793/what-is-a-serialversionuid-and-why-should-i-use-it)
