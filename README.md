@@ -7,3 +7,5 @@
 [建立第一个SprongBoot项目](https://github.com/RogerGold/SpringBoot/blob/master/createSpringBootProject.md)
 
 [SpringBoot连接MySQL](https://github.com/RogerGold/SpringBoot/blob/master/connectMySQL.md)
+
+[JAVA序列化](https://github.com/RogerGold/SpringBoot/blob/master/Java%20%E5%BA%8F%E5%88%97%E5%8C%96.md)
