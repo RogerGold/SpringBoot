@@ -9,3 +9,5 @@
 [SpringBoot连接MySQL](https://github.com/RogerGold/SpringBoot/blob/master/connectMySQL.md)
 
 [JAVA序列化](https://github.com/RogerGold/SpringBoot/blob/master/Java%20%E5%BA%8F%E5%88%97%E5%8C%96.md)
+
+[开发常见问题总结](https://github.com/RogerGold/SpringBoot/blob/master/%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93.md)
