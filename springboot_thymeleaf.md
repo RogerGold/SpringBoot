@@ -1,4 +1,4 @@
-# pring-boot使用thymeleaf模板
+# Spring-boot使用thymeleaf模板
 
 1. 在pom.xml加入依赖, 更新:
 
