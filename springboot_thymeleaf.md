@@ -76,13 +76,19 @@
  
 有关thymeleaf中的默认这是可以查看org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties这个类的属性 
 
-二、在html页面中引入thymeleaf命名空间，即<html xmlns:th=http://www.thymeleaf.org></html>，此时在html模板文件中动态的属性使用th:命名空间修饰 
+二、在html页面中引入thymeleaf命名空间，即
 
-三、引用静态资源文件，比如CSS和JS文件，语法格式为“@{}”，如@{/js/blog/blog.js}会引入/static目录下的/js/blog/blog.js文件 
+            <html xmlns:th=http://www.thymeleaf.org></html>
+此时在html模板文件中动态的属性使用th:命名空间修饰。 
 
-四、访问spring-mvc中model的属性，语法格式为“${}”，如${user.id}可以获取model里的user对象的id属性 
+三、引用静态资源文件，比如CSS和JS文件，语法格式为“@{}”，如@{/js/blog/blog.js}会引入/static目录下的/js/blog/blog.js文件 。
 
-五、循环，在html的标签中，加入th:each=“value:${list}”形式的属性，如"<span th:each=”user:${users}”></span>"可以迭代users的数据 
+四、访问spring-mvc中model的属性，语法格式为“${}”，如${user.id}可以获取model里的user对象的id属性。 
+
+五、循环，在html的标签中，加入th:each=“value:${list}”形式的属性，如
+
+                       <span th:each=”user:${users}”></span>
+可以迭代users的数据。
 
 
 ref: [usingthymeleaf.html](https://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html#what-is-thymeleaf)
