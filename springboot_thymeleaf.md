@@ -90,5 +90,6 @@
                        <span th:each=”user:${users}”></span>
 可以迭代users的数据。
 
+六、 只是更新页面显示， 可以编译页面后刷新页面看到更新的效果 不需要重启服务。
 
 ref: [usingthymeleaf.html](https://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html#what-is-thymeleaf)
