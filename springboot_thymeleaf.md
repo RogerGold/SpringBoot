@@ -82,7 +82,7 @@
 
 四、访问spring-mvc中model的属性，语法格式为“${}”，如${user.id}可以获取model里的user对象的id属性 
 
-五、循环，在html的标签中，加入th:each=“value:${list}”形式的属性，如<span th:each=”user:${users}”></span>可以迭代users的数据 
+五、循环，在html的标签中，加入th:each=“value:${list}”形式的属性，如"<span th:each=”user:${users}”></span>"可以迭代users的数据 
 
 
-ref[usingthymeleaf.html](https://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html#what-is-thymeleaf)
+ref: [usingthymeleaf.html](https://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html#what-is-thymeleaf)
