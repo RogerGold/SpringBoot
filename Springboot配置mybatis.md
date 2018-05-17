@@ -17,19 +17,19 @@
 2. 创建接口Mapper（不是类）并在resource目录下创建对应的Mapper.xml文件, 注意方法名称要和Mapper.xml文件中的id一致，这样会自动对应上。
 
 
-    public interface StudentMapper {
+          public interface StudentMapper {
 
-        List<Student> getAll();
+              List<Student> getAll();
 
-        Student getByName(String name);
+              Student getByName(String name);
 
-        void insert(Student user);
+              void insert(Student user);
 
-        void update(Student user);
+              void update(Student user);
 
-        void deleteByID(int id);
+              void deleteByID(int id);
 
-    }
+          }
    
 Mapper.xml文件
    
@@ -91,23 +91,23 @@ Mapper.xml文件
     
 3. 在application.properties添加数据库和mybatis配置
 
-    spring.datasource.driverClassName = com.mysql.jdbc.Driver
-    spring.datasource.url = jdbc:mysql://localhost:3306/students_db?useUnicode=true&characterEncoding=utf-8&useSSL=true
-    spring.datasource.username = root
-    spring.datasource.password = root
+          spring.datasource.driverClassName = com.mysql.jdbc.Driver
+          spring.datasource.url = jdbc:mysql://localhost:3306/students_db?useUnicode=true&characterEncoding=utf-8&useSSL=true
+          spring.datasource.username = root
+          spring.datasource.password = root
 
-    #mybatis.typeAliasesPackage：为实体对象所在的包，跟数据库表一一对应
-    #mybatis.mapperLocations：mapper文件的位置
-    mybatis.typeAliasesPackage=com.example.demo.entity
-    mybatis.mapperLocations=classpath:mybatis/mapper/*Mapper.xml
+          #mybatis.typeAliasesPackage：为实体对象所在的包，跟数据库表一一对应
+          #mybatis.mapperLocations：mapper文件的位置
+          mybatis.typeAliasesPackage=com.example.demo.entity
+          mybatis.mapperLocations=classpath:mybatis/mapper/*Mapper.xml
 
 4. 配置启动类，添加MapperScan注解
 
-  @SpringBootApplication
-  @MapperScan("com.example.demo.dao") // mybatis扫描路径，针对的是接口Mapper类
-  public class SpringBootDemoApplication {
+        @SpringBootApplication
+        @MapperScan("com.example.demo.dao") // mybatis扫描路径，针对的是接口Mapper类
+        public class SpringBootDemoApplication {
 
-      public static void main(String[] args) {
-          SpringApplication.run(SpringBootDemoApplication.class, args);
-      }
-  }
+            public static void main(String[] args) {
+                SpringApplication.run(SpringBootDemoApplication.class, args);
+            }
+        }
