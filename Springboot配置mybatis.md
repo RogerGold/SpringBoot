@@ -111,3 +111,10 @@ Mapper.xml文件
                 SpringApplication.run(SpringBootDemoApplication.class, args);
             }
         }
+
+可能遇到的问题：
+
+InvalidDefinitionException ：添加默认的构造函数（即无参数的构造函数）
+
+'id' doesn't have a default value
+将mysql中对应表的id字段设置为自增即可。写sql语句的时候没有加上auto_increment,所以在数据存储的时候老是报Field 'id' doesn't have a default value
