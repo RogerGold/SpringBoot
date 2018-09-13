@@ -70,8 +70,10 @@ That way your other projects can use the packaged JAR files of your own projects
 by specifying them as external dependencies inside their Maven POM files.
 
 Your Maven settings file is also located in your user-home/.m2 directory and is called settings.xml. 
-Here is how you specify another location for your local repository:
+Here is how you specify another location for your local repository in settings.xml:
 
+    <localRepository>${user.home}/.m2/repository</localRepository>
+   
 ### Central Repository
 The central Maven repository is a repository provided by the Maven community.
 By default Maven looks in this central repository for any dependencies needed but not found in your local repository.
